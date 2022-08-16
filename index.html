@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Decoder</title>
+        <link rel="stylesheet" href="style.css">
+		<script defer src="https://kit.fontawesome.com/9555ff22ed.js" crossorigin="anonymous"></script>
+		<script defer src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+	</head>
+	<body>
+		<header>
+			<a><img class="header__logo" src="https://www.alura.com.br/assets/img/alura-logo.svg"></i></a>
+			<nav class="header__menu">
+				<li><a href="https://josafa.com.br" target="_blank">Portfólio</a></li>
+				<li><a href="https://blog.josafa.com.br" target="_blank">Blog</a></li>
+				<div class="header__social">
+					<a href="https://github.com/josafamarengo" target="_blank">G</a>
+					<a href="https://linkedin.com/in/josafamarengo" target="_blank">L</a>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<section class="input">
+				<span class="input__textArea" role="textbox" contenteditable></span>
+				<span class="info"><i class="fa-solid fa-circle-exclamation"></i> Apenas letras minúsculas e sem acento.</span>
+				<div class="input__buttons">
+                    <button id="encryptButton" class="input__criptografar">Criptografar</button>
+                    <button id="decryptButton" class="input__descriptografar">Descriptografar</button>
+                </div>
+			</section>
+			<section class="output">
+				<div class="output__container"><div id="noMsg">
+                    <lottie-player src="https://assets2.lottiefiles.com/private_files/lf30_cgfdhxgx.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+                    <h2>Nenhuma mensagem encontrada</h2>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+                <div class="output__text"></div>
+			</section>
+		</main>
+        <footer align="center">
+            <sub>Desenvolvido com ❤︎ por <a href="https://josafa.com.br">Josafá Marengo</a>
+        </footer>
+        <script src="script.js"></script>
+	</body>
+</html>
